@@ -14,7 +14,7 @@ import com.educandoweb.course.entities.repositories.UserRepository;
 @Profile("test")
 public class TestConfig implements CommandLineRunner{
 	
-	@Autowired
+	@Autowired // faz com que resolva as dependências e associar uma instancia de userRepository aqui dentro
 	private UserRepository userRepository;
 
 	@Override
